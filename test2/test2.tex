@@ -1,0 +1,42 @@
+\documentclass[a4paper, twoside, fleqn, onecolumn, 11pt]{article}
+\author{Michael Braine}
+\title{LaTeX learning}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\begin{document}
+  \maketitle
+  \tableofcontents
+
+  \section{Some text first}
+  Here begins the document.
+
+  \section{Mathematics}
+  %the following are from amsfonts package or amssymb package
+  % \begin{math}
+  $\mathbb{P}$ any prime numbers \\
+  $\mathbb{W}$ any whole numbers \\
+  $\mathbb{N}$ any natural numbers \\
+  $\mathbb{Z}$ any integer \\
+  $\mathbb{I}$ any irrational number \\
+  $\mathbb{Q}$ any rational number \\
+  $\mathbb{R}$ any real number \\
+  % \end{math}
+  Einstein's total relativistic energy of a body:
+  \begin{equation}
+    E = \gamma m c^2
+  \end{equation}
+  \begin{equation*}
+    \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
+  \end{equation*}
+  Using a binomial expansion:
+  \begin{equation}
+    E \approx mc^2 + \frac{1}{2}mv^2
+  \end{equation}
+  Energy of a quantized matter wave in a rigid box:
+  \begin{equation}
+    E_n = n^2 \frac{\pi^2\hbar^2}{2ma^2}
+    \newline
+    \mathbb{Z}: n = 1, 2, \ldots, \infty
+  \end{equation}
+\end{document}
